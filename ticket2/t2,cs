@@ -1,0 +1,40 @@
+using System;
+
+
+
+namespace Ticket2
+{
+    class Program
+    {
+        public static void Main()
+        {
+            //создаем переменые 
+            double c,a,b,side1,side2,side3;
+            //считываем 3  стороны
+            System.Console.WriteLine("введите 3 стороны");
+            double.TryParse(Console.ReadLine(),out side1); 
+            double.TryParse(Console.ReadLine(),out side2);
+            double.TryParse(Console.ReadLine(),out side3);
+           
+           //проверяем существует ли треугольник
+            if ((side1 + side2 <= side3) || (side1 + side3 <= side2) || (side2 + side3 <= side1))
+            {
+                System.Console.WriteLine("Ошибка: Треугольник с такими сторонами не существует");
+                return; 
+            }
+
+            //нахождение большей стороны
+            if(side1 >= side2 && side1 >= side3) {c = side1; a = side2;b = side3;} 
+            else if(side2 >= side1 && side2 >= side3) {c = side2; a = side1;b = side3;} 
+            else{c = side3; a = side1;b = side2;} 
+            //подсчет квадрата число и округление дроби до 5 знаков после запятой 
+            double result_C =Math.Round((c * c),5);
+            double result_AB =Math.Round((b*b)+(a*a),5);
+            //вывод возможные варианты треугольников
+            if(result_C > result_AB) System.Console.WriteLine("треугольник тупоугольный");
+            else if(result_C < result_AB) System.Console.WriteLine("треугольник остроугольный");
+            else System.Console.WriteLine("неизвестный треугольник");
+    }
+        } 
+    }
+}
