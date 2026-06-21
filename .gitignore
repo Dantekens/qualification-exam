@@ -427,3 +427,8 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+
+Program.cs
+qualification-exam.csproj
+obj/
