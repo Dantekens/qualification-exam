@@ -36,5 +36,5 @@ namespace Ticket1
             else System.Console.WriteLine("неизвестный треугольник");
     }
         } 
-    }
+    
 }

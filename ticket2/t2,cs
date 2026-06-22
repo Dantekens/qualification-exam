@@ -34,7 +34,7 @@ namespace Ticket2
             if(result_C > result_AB) System.Console.WriteLine("треугольник тупоугольный");
             else if(result_C < result_AB) System.Console.WriteLine("треугольник остроугольный");
             else System.Console.WriteLine("неизвестный треугольник");
-    }
-        } 
-    }
+        }
+    } 
+    
 }

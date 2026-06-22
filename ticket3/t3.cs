@@ -23,16 +23,14 @@ namespace Ticket3
                 return; 
             }
 
-            
-            
-            double result_C =Math.Round(c ,5);
-            double result_A =Math.Round(a,5);
-            double result_B =Math.Round(b,5);
+            double result_C =Math.Round(side1 ,5);
+            double result_A =Math.Round(side2,5);
+            double result_B =Math.Round(side3,5);
             //вывод возможные варианты треугольников
             if(result_C == result_A&&result_C==result_B) System.Console.WriteLine("треугольник равнестороний");
             else if(result_C == result_A|| result_C == result_B|| result_A == result_B) System.Console.WriteLine("треугольник равнобедреный");
-            else System.Console.WriteLine("неизвестный разностороний");
+            else System.Console.WriteLine("треугольник разностороний");
     }
         } 
-    }
+    
 }
