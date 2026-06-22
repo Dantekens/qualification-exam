@@ -1,9 +1,9 @@
 using System;
-using System.Reflection.Emit;
 
 
 
-namespace Ticket3
+
+namespace Ticket4
 {
     class Program
     {
@@ -26,7 +26,7 @@ namespace Ticket3
                 System.Console.WriteLine("Ошибка: ТРАПЕЦИЯ с такими сторонами не существует");
                 return; 
             }
-           double side1 = Math.Round(d * d,5);
+            double side1 = Math.Round(d * d,5);
             double side2 = Math.Round((a*b)+(c*c),5);
             //вывод возможные варианты треугольников
             if(side1 == side2) System.Console.WriteLine("трапеция равнобокая");
