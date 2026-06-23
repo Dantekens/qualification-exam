@@ -11,7 +11,7 @@ namespace Ticket9
         {
             //создаем переменые 
             double a,b,c,D;
-            //считываем 3  стороны
+            //считываем данные для дискриминантаы
             System.Console.WriteLine("даанные для дескриминанта");
             double.TryParse(Console.ReadLine(),out a); 
             double.TryParse(Console.ReadLine(),out b);
@@ -22,6 +22,7 @@ namespace Ticket9
             //вывод возможные варианты треугольников
             if(D>0) System.Console.WriteLine("два корня");
             else if(D == 0)  System.Console.WriteLine("один корень");
+            else  System.Console.WriteLine("такой ответ не предусмотрен");
             
             
         }

@@ -22,6 +22,7 @@ namespace Ticket10
             //вывод возможные варианты треугольников
             if(D<0) System.Console.WriteLine("нет корней");
             else if(D == 0)  System.Console.WriteLine("один корень");
+            else  System.Console.WriteLine("такой ответ не предусмотрен");
             
             
         }

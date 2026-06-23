@@ -22,7 +22,7 @@ namespace Ticket3
                 System.Console.WriteLine("Ошибка: Треугольник с такими сторонами не существует");
                 return; 
             }
-
+            //округляем до 5 знаков после запятой
             double result_C =Math.Round(side1 ,5);
             double result_A =Math.Round(side2,5);
             double result_B =Math.Round(side3,5);

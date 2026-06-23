@@ -16,7 +16,7 @@ namespace Ticket1
             double.TryParse(Console.ReadLine(),out side2);
             double.TryParse(Console.ReadLine(),out side3);
            
-           //проверяем существует ли треугольник
+           //проверяем существует ли треугольник c такими сторонами
             if ((side1 + side2 <= side3) || (side1 + side3 <= side2) || (side2 + side3 <= side1))
             {
                 System.Console.WriteLine("Ошибка: Треугольник с такими сторонами не существует");
